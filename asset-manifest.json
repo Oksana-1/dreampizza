@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/dreampizza/static/css/main.073c9b0a.css",
-    "main.js": "/dreampizza/static/js/main.932ccfc5.js",
+    "main.css": "/dreampizza/static/css/main.6d0e83d3.css",
+    "main.js": "/dreampizza/static/js/main.082ed31f.js",
     "static/js/787.e102ca77.chunk.js": "/dreampizza/static/js/787.e102ca77.chunk.js",
-    "static/media/logo.svg": "/dreampizza/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/bg1.jpg": "/dreampizza/static/media/bg1.eca564f854874b62f680.jpg",
+    "static/media/caveat-v10-latin_cyrillic-regular.ttf": "/dreampizza/static/media/caveat-v10-latin_cyrillic-regular.73981a2918b39b072226.ttf",
+    "static/media/caveat-v10-latin_cyrillic-regular.svg": "/dreampizza/static/media/caveat-v10-latin_cyrillic-regular.4a1d0313a82f8a877776.svg",
+    "static/media/main_logo.png": "/dreampizza/static/media/main_logo.c7ad9e49eb20868e6db6.png",
+    "static/media/caveat-v10-latin_cyrillic-regular.woff": "/dreampizza/static/media/caveat-v10-latin_cyrillic-regular.233a50820e08ef70e4ea.woff",
+    "static/media/caveat-v10-latin_cyrillic-regular.eot": "/dreampizza/static/media/caveat-v10-latin_cyrillic-regular.929452aadddba1ce6ff7.eot",
+    "static/media/pizza.png": "/dreampizza/static/media/pizza.13ca260d075b5b51062a.png",
+    "static/media/caveat-v10-latin_cyrillic-regular.woff2": "/dreampizza/static/media/caveat-v10-latin_cyrillic-regular.ba802fdd8bde69fa0b85.woff2",
+    "static/media/cuprum-v14-latin_cyrillic-regular.svg": "/dreampizza/static/media/cuprum-v14-latin_cyrillic-regular.1a19fde1bd493c5735e4.svg",
+    "static/media/cuprum-v14-latin_cyrillic-regular.ttf": "/dreampizza/static/media/cuprum-v14-latin_cyrillic-regular.46da87627082cc0b8bbc.ttf",
+    "static/media/cuprum-v14-latin_cyrillic-regular.woff": "/dreampizza/static/media/cuprum-v14-latin_cyrillic-regular.0d9649c35a4c078351a9.woff",
+    "static/media/cuprum-v14-latin_cyrillic-regular.eot": "/dreampizza/static/media/cuprum-v14-latin_cyrillic-regular.f20bc77f48622c145864.eot",
+    "static/media/cuprum-v14-latin_cyrillic-regular.woff2": "/dreampizza/static/media/cuprum-v14-latin_cyrillic-regular.0f3737b497e8b0fae7a3.woff2",
     "index.html": "/dreampizza/index.html",
-    "main.073c9b0a.css.map": "/dreampizza/static/css/main.073c9b0a.css.map",
-    "main.932ccfc5.js.map": "/dreampizza/static/js/main.932ccfc5.js.map",
+    "main.6d0e83d3.css.map": "/dreampizza/static/css/main.6d0e83d3.css.map",
+    "main.082ed31f.js.map": "/dreampizza/static/js/main.082ed31f.js.map",
     "787.e102ca77.chunk.js.map": "/dreampizza/static/js/787.e102ca77.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.932ccfc5.js"
+    "static/css/main.6d0e83d3.css",
+    "static/js/main.082ed31f.js"
   ]
 }
