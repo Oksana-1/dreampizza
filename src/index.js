@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import store from "./store/store";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function render(state) {
+  ReactDOM.render(
+    <BrowserRouter>
+      <App
+        price={state.price.result}
+        pizzaName={state.pizzaName}
+        doughType={state.dough.doughTypeArray}
+        doughDiameter={state.dough.doughDiameterArray}
+        dispatch={store.dispatch.bind(store)}       
+      />
+    </BrowserRouter>,
+    document.getElementById("root")
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+store.subscribe(() => render(store.getState()));
+render(store.getState());
+
 reportWebVitals();

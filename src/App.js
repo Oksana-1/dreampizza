@@ -1,12 +1,25 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
+import Main from "./components/Main";
+import Home from "./components/Home";
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <div className="container">
-        <h1>Pizza maker</h1>
-      </div>
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route
+          path="/main"
+          element={
+            <Main
+              price={props.price}
+              doughType={props.doughType}
+              doughDiameter={props.doughDiameter}
+              dispatch={props.dispatch}              
+            />
+          }
+        ></Route>
+      </Routes>
     </div>
   );
 }
