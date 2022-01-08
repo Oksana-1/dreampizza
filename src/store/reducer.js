@@ -32,7 +32,7 @@ const getInitialState = () => {
     pizzaName: "_pizza_name",
     dough: {
       doughTypeArray: ["Традиционное", "Тонкое"],
-      doughDiameterArray: [23, 30, 35, 40],    
+      doughDiameterArray: [23, 30, 35, 40],
     },
   };
 };
