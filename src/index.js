@@ -5,23 +5,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import store from "./store/store";
+import { Provider } from "react-redux";
 
-function render(state) {
-  ReactDOM.render(
-    <BrowserRouter>
-      <App
-        price={state.price.result}
-        pizzaName={state.pizzaName}
-        doughType={state.dough.doughTypeArray}
-        doughDiameter={state.dough.doughDiameterArray}
-        dispatch={store.dispatch.bind(store)}       
-      />
-    </BrowserRouter>,
-    document.getElementById("root")
-  );
-}
-
-store.subscribe(() => render(store.getState()));
-render(store.getState());
+ReactDOM.render(
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
 reportWebVitals();

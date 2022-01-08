@@ -1,23 +1,16 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import pizza from "../images/pizza.png";
-import {
-  setDoughTypeActionCreator,
-  setNameActionCreator,
-  setPriceActionCreator,
-} from "../store/reducer";
+import pizza from "../../images/pizza.png";
+
 const Main = (props) => {
   const setName = (e) => {
-    const action = setNameActionCreator(e);
-    props.dispatch(action);
+    props.setName(e);
   };
   const setPrice = (e) => {
-    const action = setPriceActionCreator(e);
-    props.dispatch(action);
+    props.setPrice(e);
   };
   const setDoughType = (e) => {
-    const action = setDoughTypeActionCreator(e);
-    props.dispatch(action);
+    props.setDoughType(e);
   };
   const [idxType, newIdxType] = useState(0);
   const setActiveTypeInput = (a) => {
@@ -28,7 +21,7 @@ const Main = (props) => {
     newIdxDiameter(a);
   };
 
-  const doughType = props.doughType.map((arrElem, arrElemIdx) => {
+  const doughType = props.dough.doughType.map((arrElem, arrElemIdx) => {
     return (
       <div
         onClick={setDoughType}
@@ -40,7 +33,7 @@ const Main = (props) => {
       </div>
     );
   });
-  const doughDiameter = props.doughDiameter.map((arrElem, arrElemIdx) => {
+  const doughDiameter = props.dough.doughDiameter.map((arrElem, arrElemIdx) => {
     return (
       <div
         onClick={setPrice}
@@ -69,7 +62,7 @@ const Main = (props) => {
           <NavLink to="/" className="navBar__homeLink">
             На главную
           </NavLink>
-          <p>Итого: {props.price}grn</p>
+          <p>Итого: {props.price.result}grn</p>
         </div>
         <div className="maker">
           <div className="maker__top-maker">

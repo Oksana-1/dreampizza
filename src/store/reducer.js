@@ -32,11 +32,11 @@ const getInitialState = () => {
     pizzaName: "_pizza_name",
     dough: {
       doughTypeArray: ["Традиционное", "Тонкое"],
-      doughDiameterArray: [23, 30, 35, 40],    
+      doughDiameterArray: [23, 30, 35, 40],
     },
   };
 };
-const reducer = (state = getInitialState(), action = { type: DEFAULT }) => {
+const reducer = (state = getInitialState(), action) => {
   const newState = {
     ...state,
     price: state.price,
