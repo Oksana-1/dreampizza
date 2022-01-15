@@ -21,7 +21,7 @@ const Main = (props) => {
     newIdxDiameter(a);
   };
 
-  const doughType = props.dough.doughType.map((arrElem, arrElemIdx) => {
+  const doughType = props.dough.doughTypeArray.map((arrElem, arrElemIdx) => {
     return (
       <div
         onClick={setDoughType}
@@ -33,7 +33,7 @@ const Main = (props) => {
       </div>
     );
   });
-  const doughDiameter = props.dough.doughDiameter.map((arrElem, arrElemIdx) => {
+  const doughDiameter = props.dough.doughDiameterArray.map((arrElem, arrElemIdx) => {
     return (
       <div
         onClick={setPrice}
