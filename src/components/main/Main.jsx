@@ -20,13 +20,18 @@ const Main = (props) => {
   const setActiveDiameterInput = (a) => {
     newIdxDiameter(a);
   };
+  const doughTypeMapping = {
+    tradition: "Традиционное",
+    thin: "Тонкое"
+  }
 
   const doughType = props.dough.doughTypeArray.map((arrElem, arrElemIdx) => {
+    const doughTypeTitle = doughTypeMapping[props.currentDoughType];
     return (
       <div
         onClick={setDoughType}
         key={arrElemIdx}
-        className={arrElemIdx === idxType ? "doughElem active" : "doughElem"}
+        className={ doughTypeTitle === arrElem ? "doughElem active" : "doughElem" }
         data-dtype={arrElemIdx === 0 ? "tradition" : "thin"}
       >
         {arrElem}

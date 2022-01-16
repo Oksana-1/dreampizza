@@ -34,6 +34,7 @@ const getInitialState = () => {
       doughTypeArray: ["Традиционное", "Тонкое"],
       doughDiameterArray: [23, 30, 35, 40],
     },
+    currentDoughType: "tradition",
   };
 };
 const reducer = (state = getInitialState(), action) => {
@@ -46,11 +47,12 @@ const reducer = (state = getInitialState(), action) => {
   switch (action.type) {
     case SET_NAME:
       newState.pizzaName =
-        action.value == "" ? getInitialState().pizzaName : action.value;
+        action.value === "" ? getInitialState().pizzaName : action.value;
       return newState;
     case SET_DOUGH_TYPE:
-      newState.doughDiameterArray = state.dough.doughDiameterArray =
+      newState.dough.doughDiameterArray = state.dough.doughDiameterArray =
         action.value === "tradition" ? [23, 30, 35, 40] : [30, 35, 40];
+      newState.currentDoughType = action.value;
       return newState;
     case SET_PRICE:
       state.price.items.dough = action.value;

@@ -10,6 +10,7 @@ const mapStateToProps = (state) => {
     price: state.main.price,
     pizzaName: state.main.pizzaName,
     dough: state.main.dough,
+    currentDoughType: state.main.currentDoughType,
   };
 };
 
